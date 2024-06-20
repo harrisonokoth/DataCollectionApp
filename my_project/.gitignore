@@ -1,0 +1,31 @@
+# Ignore Python bytecode files
+*.pyc
+__pycache__/
+
+# Ignore virtual environment directory
+venv/
+
+# Ignore Django migration files
+*/migrations/
+
+# Ignore database files
+*.sqlite3
+
+# Ignore Django secret keys
+*.json
+
+# Ignore compiled CSS and JavaScript files
+*.css
+*.js
+
+# Ignore all .env files
+.env
+
+# Ignore all log files
+*.log
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore macOS system files
+.DS_Store
