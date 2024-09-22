@@ -1,3 +1,6 @@
 from django.contrib import admin
+from .models import ModelTrainingJob, TrainedModel, ModelEvaluation
 
-# Register your models here.
+admin.site.register(ModelTrainingJob)
+admin.site.register(TrainedModel)
+admin.site.register(ModelEvaluation)

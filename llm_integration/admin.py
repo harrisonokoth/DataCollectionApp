@@ -1,3 +1,6 @@
 from django.contrib import admin
+from .models import LLMModel, IntegrationConfig, LLMRequest
 
-# Register your models here.
+admin.site.register(LLMModel)
+admin.site.register(IntegrationConfig)
+admin.site.register(LLMRequest)

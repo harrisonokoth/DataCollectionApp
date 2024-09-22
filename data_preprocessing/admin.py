@@ -1,3 +1,6 @@
 from django.contrib import admin
+from .models import DataSet, DataPreprocessingStep, DataTransformation
 
-# Register your models here.
+admin.site.register(DataSet)
+admin.site.register(DataPreprocessingStep)
+admin.site.register(DataTransformation)

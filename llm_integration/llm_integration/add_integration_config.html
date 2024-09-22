@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Integration Config</title>
+</head>
+<body>
+    <h1>Add Integration Config</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <p><strong>Parameters Example:</strong></p>
+        <p><code>{"key1": "value1", "key2": "value2"}</code></p>
+        <button type="submit">Add</button>
+    </form>
+    {% if form.non_field_errors %}
+        <div style="color: red;">{{ form.non_field_errors }}</div>
+    {% endif %}
+</body>
+</html>
